@@ -1,0 +1,106 @@
+<!-- page1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Michael Mwanza - University of Lusaka Student Portfolio">
+    <title>Michael Mwanza - My Hobbies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Michael Mwanza</h1>
+                <p>University of Lusaka Student</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Academic Results ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="year1.html">Year 1 Results</a></li>
+                            <li><a href="year2.html">Year 2 Results</a></li>
+                            <li><a href="year3.html">Year 3 Results</a></li>
+                            <li><a href="year4.html">Year 4 Results</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="page1.html" class="active">My Hobbies</a></li>
+                    <li><a href="page2.html">Career Goals</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="index.html" class="logout">Logout</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="page-header">
+                <h1>My Hobbies & Interests</h1>
+                <p>Exploring passions beyond academics</p>
+            </section>
+
+            <section class="hobbies-content">
+                <div class="hobby-card">
+                    <div class="hobby-image">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Coding">
+                    </div>
+                    <div class="hobby-info">
+                        <h2>Coding & Programming</h2>
+                        <p>I enjoy spending my free time working on personal coding projects. From building web applications to experimenting with new programming languages, coding allows me to express my creativity and problem-solving skills.</p>
+                        <p>Recently, I've been exploring machine learning with Python and developing mobile applications using Flutter.</p>
+                    </div>
+                </div>
+
+                <div class="hobby-card reverse">
+                    <div class="hobby-image">
+                        <img src="M:\WEB ASSIGNMENT\WhatsApp Image 2025-09-30 at 16.19.46_ef763286.jpg" alt="Basketball">
+                    </div>
+                    <div class="hobby-info">
+                        <h2>Football</h2>
+                        <p>Football is my favorite sport and a great way to stay active. I play with friends on weekends and follow the champions league closely. The strategy, teamwork, and athleticism required in basketball fascinate me.</p>
+                        <p>My favorite team is Liverpool, and I admire players MO SALAH for their dedication and skill.</p>
+                    </div>
+                </div>
+
+                <div class="hobby-card">
+                    <div class="hobby-image">
+                        <img src="M:\WEB ASSIGNMENT\download.jpg" alt="Photography">
+                    </div>
+                    <div class="hobby-info">
+                        <h2>Playing video games</h2>
+                        <p>I love playing video games as it keeps me busy in my free hours of the day</p>
+                    </div>
+                </div>
+
+                
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Michael Mwanza. All rights reserved.</p>
+            <p>University of Lusaka Student Portfolio</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

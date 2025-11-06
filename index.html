@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Michael Mwanza - University of Lusaka Student Portfolio">
+    <title>Michael Mwanza - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="login-card">
+            <h1>Welcome Back</h1>
+            <p>Please login to access your portfolio</p>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username">
+                    <span class="error-message" id="usernameError"></span>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+                
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            
+            
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            let isValid = true;
+            
+            // Clear previous errors
+            document.getElementById('usernameError').textContent = '';
+            document.getElementById('passwordError').textContent = '';
+            
+            // Username validation
+            if (username.trim() === '') {
+                document.getElementById('usernameError').textContent = 'Username is required';
+                isValid = false;
+            } else if (username.length < 4) {
+                document.getElementById('usernameError').textContent = 'Username must be at least 4 characters';
+                isValid = false;
+            }
+            
+            // Password validation
+            if (password.trim() === '') {
+                document.getElementById('passwordError').textContent = 'Password is required';
+                isValid = false;
+            } else if (password.length < 6) {
+                document.getElementById('passwordError').textContent = 'Password must be at least 6 characters';
+                isValid = false;
+            }
+            
+            // If valid, redirect to home page
+            if (isValid) {
+                // In a real application, you would authenticate with a server
+                // For this demo, we'll just redirect
+                window.location.href = 'home.html';
+            }
+        });
+    </script>
+</body>
+</html>

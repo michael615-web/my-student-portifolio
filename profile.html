@@ -1,0 +1,163 @@
+<!-- profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Michael Mwanza - University of Lusaka Student Portfolio">
+    <title>Michael Mwanza - Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Michael Mwanza</h1>
+                <p>University of Lusaka Student</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Academic Results ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="year1.html">Year 1 Results</a></li>
+                            <li><a href="year2.html">Year 2 Results</a></li>
+                            <li><a href="year3.html">Year 3 Results</a></li>
+                            <li><a href="year4.html">Year 4 Results</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="page1.html">My Hobbies</a></li>
+                    <li><a href="page2.html">Career Goals</a></li>
+                    <li><a href="profile.html" class="active">Profile</a></li>
+                    <li><a href="index.html" class="logout">Logout</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="profile-header">
+                <h1>Academic Profile</h1>
+                <p>Summary of my academic journey and achievements</p>
+            </section>
+
+            <section class="profile-content">
+                <div class="profile-summary">
+                    <h2>About Me</h2>
+                    <p>I am a dedicated Computer Science student at the University of Lusaka with a passion for technology and innovation. Throughout my academic journey, I have maintained a strong academic record while actively participating in various extracurricular activities and projects.</p>
+                    
+                    <h3>Academic Achievements</h3>
+                    <ul>
+                        <li>Dean's List for three consecutive semesters</li>
+                        <li>Recipient of the Academic Excellence Scholarship</li>
+                        <li>Participated in the National Coding Competition 2022</li>
+                        <li>Completed an internship at TechSolutions Zambia</li>
+                        <li>Published a research paper on "AI Applications in Agriculture"</li>
+                    </ul>
+                </div>
+
+                <div class="results-table-container">
+                    <h2>Academic Results Summary</h2>
+                    <table class="results-table">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Code</th>
+                                <th>Credits</th>
+                                <th>Grade</th>
+                                <th>Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Introduction to Programming</td>
+                                <td>CS101</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>16.0</td>
+                            </tr>
+                            <tr>
+                                <td>Calculus I</td>
+                                <td>MATH101</td>
+                                <td>3</td>
+                                <td>B+</td>
+                                <td>10.5</td>
+                            </tr>
+                            <tr>
+                                <td>Data Structures</td>
+                                <td>CS201</td>
+                                <td>4</td>
+                                <td>A-</td>
+                                <td>14.0</td>
+                            </tr>
+                            <tr>
+                                <td>Database Systems</td>
+                                <td>CS301</td>
+                                <td>3</td>
+                                <td>A</td>
+                                <td>12.0</td>
+                            </tr>
+                            <tr>
+                                <td>Software Engineering</td>
+                                <td>CS401</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>16.0</td>
+                            </tr>
+                            <tr>
+                                <td>Artificial Intelligence</td>
+                                <td>CS402</td>
+                                <td>3</td>
+                                <td>B+</td>
+                                <td>10.5</td>
+                            </tr>
+                            <tr>
+                                <td>Web Development</td>
+                                <td>CS202</td>
+                                <td>3</td>
+                                <td>A</td>
+                                <td>12.0</td>
+                            </tr>
+                            <tr>
+                                <td>Computer Networks</td>
+                                <td>CS302</td>
+                                <td>3</td>
+                                <td>A-</td>
+                                <td>10.5</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2"><strong>Overall GPA:</strong></td>
+                                <td colspan="3"><strong>3.78 / 4.0</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Michael Mwanza. All rights reserved.</p>
+            <p>University of Lusaka Student Portfolio</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!-- year1.html (similar structure for year2.html, year3.html, year4.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Michael Mwanza - University of Lusaka Student Portfolio">
+    <title>Michael Mwanza - Year 2 Results</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Michael Mwanza</h1>
+                <p>University of Lusaka Student</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="active">Academic Results ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="year1.html" class="active">Year 2 Results</a></li>
+                            <li><a href="year2.html">Year 2 Results</a></li>
+                            <li><a href="year3.html">Year 3 Results</a></li>
+                            <li><a href="year4.html">Year 4 Results</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="page1.html">My Hobbies</a></li>
+                    <li><a href="page2.html">Career Goals</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="index.html" class="logout">Logout</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="page-header">
+                <h1>Year 2 Academic Results</h1>
+                <p>First Year - Computer Science Program</p>
+                <a href="home.html" class="back-btn">← Back to Home</a>
+            </section>
+
+            <div class="results-table-container">
+    <h2>Detailed Results</h2>
+    <table class="results-table">
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Code</th>
+                <th>Credits</th>
+                <th>Grade</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Web Development Fundamentals</td>
+                <td>CS105</td>
+                <td>3</td>
+                <td>A-</td>
+                <td>11.0</td>
+            </tr>
+            <tr>
+                <td>Database Systems</td>
+                <td>CS202</td>
+                <td>4</td>
+                <td>B+</td>
+                <td>14.0</td>
+            </tr>
+            <tr>
+                <td>Operating Systems</td>
+                <td>CS203</td>
+                <td>3</td>
+                <td>B</td>
+                <td>9.0</td>
+            </tr>
+            <tr>
+                <td>Network Security</td>
+                <td>CS204</td>
+                <td>3</td>
+                <td>A</td>
+                <td>12.0</td>
+            </tr>
+            <tr>
+                <td>Human-Computer Interaction</td>
+                <td>CS205</td>
+                <td>2</td>
+                <td>B+</td>
+                <td>7.0</td>
+            </tr>
+            <tr>
+                <td>Mobile App Development</td>
+                <td>CS206</td>
+                <td>4</td>
+                <td>A</td>
+                <td>16.0</td>
+            </tr>
+            <tr>
+                <td>Cloud Computing</td>
+                <td>CS207</td>
+                <td>3</td>
+                <td>A-</td>
+                <td>10.5</td>
+            </tr>
+            <tr>
+                <td>Software Engineering</td>
+                <td>CS208</td>
+                <td>3</td>
+                <td>B</td>
+                <td>9.0</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Michael Mwanza. All rights reserved.</p>
+            <p>University of Lusaka Student Portfolio</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
